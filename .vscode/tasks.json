@@ -1,0 +1,97 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build: ProyectoHospital",
+      "type": "shell",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${workspaceFolder}\\src\\main.cpp",
+        "${workspaceFolder}\\src\\hospital.cpp",
+        "${workspaceFolder}\\src\\arbol.cpp",
+        "${workspaceFolder}\\src\\areas.cpp",
+        "${workspaceFolder}\\src\\cola.cpp",
+        "${workspaceFolder}\\src\\lista.cpp",
+        "${workspaceFolder}\\src\\matriz.cpp",
+        "${workspaceFolder}\\src\\paciente.cpp",
+        "-o",
+        "${workspaceFolder}\\bin\\ProyectoHospital.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "build: archivo activo (g++)",
+      "type": "shell",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "detail": "Tarea para compilar el archivo actualmente abierto"
+    }
+  ]
+}
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build: ProyectoHospital",
+      "type": "shell",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${workspaceFolder}\\src\\main.cpp",
+        "${workspaceFolder}\\src\\hospital.cpp",
+        "${workspaceFolder}\\src\\arbol.cpp",
+        "${workspaceFolder}\\src\\areas.cpp",
+        "${workspaceFolder}\\src\\cola.cpp",
+        "${workspaceFolder}\\src\\lista.cpp",
+        "${workspaceFolder}\\src\\matriz.cpp",
+        "${workspaceFolder}\\src\\paciente.cpp",
+        "-o",
+        "${workspaceFolder}\\bin\\ProyectoHospital.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe compilar archivo activo",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
